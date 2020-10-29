@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //- link(rel = 'stylesheet', href = '/fontawesome-free/css/all.css')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel = "stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+
+  body
+    nav 
+      a.menu(href="/omelette") omelette 
+      &nbsp
+      a.menu(href = "/pie") pie
+      &nbsp
+      a.menu(href = "/soup") soup
+      &nbsp
+      a.menu(href = "/taco") taco
+    block content

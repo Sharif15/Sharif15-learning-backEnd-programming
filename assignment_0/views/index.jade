@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Display Recepie For : 
+  //- script.
+  //-   for(var size = 0 ; size < meals.length ; size++){
+  //-     h2 #{meals[size].strMeal}
+  //-   }
+  //- h2 #{meals[0].strMeal}
+  ul
+    each val in obj.length ? obj : ['There are no values']
+      a.videoLink(href = val.strYoutube, target="_blank")
+        h2= val.strMeal 
+          i.fa.fa-youtube-play.icon
+      img(src=val.strMealThumb)
